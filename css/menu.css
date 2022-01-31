@@ -1,0 +1,260 @@
+@import url('style.css');
+@font-face {
+    font-family: "Sen";
+    src: url("../fonts/Sen-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Sen-Bold";
+    src: url("../fonts/Sen-Bold.ttf");
+}
+
+@font-face {
+    font-family: "Sen-ExtraBold";
+    src: url("../fonts/Sen-ExtraBold.ttf");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    border: none;
+    outline: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+nav {
+    width: 100%;
+    height: 80px !important;
+    background-color: #E4A400;
+}
+
+body {
+    background-color: #E4A400;
+    margin-bottom: 1%;
+}
+
+.logo {
+    margin-left: 20px;
+    margin-top: -8px;
+    filter: contrast(1);
+    width: 90px;
+}
+
+.menuBurger>img {
+    width: 70px !important;
+}
+
+.menuBurger {
+    margin-top: 15px !important;
+    margin-right: 15px;
+}
+
+.iconos>a>img {
+    width: 50px;
+    height: 50px;
+}
+
+.iconos {
+    width: 300px;
+    align-items: center;
+}
+
+.iconos>a {
+    height: 70px;
+}
+
+.iconos>a>p {
+    margin-top: -7px;
+    font-family: 'Sen';
+    color: white;
+}
+
+.iconos>a:hover {
+    border-radius: 10%;
+    border-bottom: solid 2px rgba(0, 0, 0, 0.5);
+}
+
+body {
+    background-color: rgb(0, 0, 0);
+}
+
+.row {
+    height: 100%;
+    margin: .3%;
+    height: 100%;
+}
+
+.row>.col {
+    margin: .3%;
+    width: 30%;
+    height: 450px;
+    background-image: url("../images/Group\ 21.png");
+    border-radius: 2%;
+    overflow: hidden;
+}
+
+.col>img {
+    transition: margin-left 1s, width 1s;
+    width: 400px;
+    margin-left: 3%;
+    margin-right: 2%;
+    margin-top: -5%;
+    z-index: 0;
+}
+
+.H2 {
+    margin-top: 5% !important;
+}
+
+.H4 {
+    margin-top: -13%!important;
+}
+
+.H5 {
+    margin-top: 12% !important;
+    margin-left: 10% !important;
+}
+
+.H6 {
+    margin-top: 7% !important;
+}
+
+.H7 {
+    margin-top: 14% !important;
+}
+
+.col>div>p {
+    font-family: 'Sen-ExtraBold';
+    font-size: 36px;
+    color: white;
+    width: 80%;
+    background-color: #E4A400;
+    border-radius: 19px;
+    margin: auto;
+    margin-top: 5%;
+    line-height: 35px;
+    filter: drop-shadow(0px 1px 4px rgba(0, 0, 0, 0.842));
+    padding-top: 7px;
+    padding-bottom: 7px;
+}
+
+.col>div {
+    width: 100%;
+    text-align: center;
+}
+
+.homeroBabeando {
+    z-index: -1 !important;
+    position: absolute;
+    top: 355px !important;
+    left: 13% !important;
+    width: 250px !important;
+    height: 250px;
+    opacity: .07;
+    filter: blur(1px);
+}
+
+.textHam,
+.textHam2,
+.textHam4,
+.textHam5,
+.textHam6,
+.textHam7 {
+    transition: opacity 1s -0.6s;
+    position: relative !important;
+    opacity: 0;
+    top: 5%;
+    width: 80%;
+    text-align: center;
+    font-family: 'Sen';
+    font-size: 23px;
+    left: 7%;
+    z-index: 0;
+    user-select: none;
+}
+
+.precio,
+.precio2,
+.precio4,
+.precio5,
+.precio6,
+.precio7 {
+    transition: opacity 1s -0.8s;
+    position: relative;
+    top: 2%;
+    z-index: 1;
+    opacity: 0;
+}
+
+.precio2 {
+    top: -2% !important;
+}
+
+.precio>img,
+.precio2>img,
+.precio4>img,
+.precio5>img,
+.precio6>img,
+.precio7>img {
+    width: 140px;
+}
+
+.textPrecioMenu {
+    filter: drop-shadow(0px 1px 4px rgba(0, 0, 0, 0)) !important;
+    position: absolute !important;
+    color: black !important;
+    top: 18%;
+    left: 10%;
+    font-size: 25px !important;
+    background-color: rgba(255, 255, 255, 0) !important;
+}
+
+.imgChange {
+    transition: margin-top 1s !important;
+    width: 110px !important;
+    margin-left: 3% !important;
+    margin-right: 2% !important;
+    margin-top: -26% !important;
+}
+
+.titleChange {
+    transition: margin-left 1s, margin-top 1s !important;
+    width: 60% !important;
+    font-size: 30px !important;
+    line-height: 25px !important;
+    margin-left: 35% !important;
+    margin-top: 8% !important;
+}
+
+.opcionesM {
+    margin-top: -.5%;
+    z-index: 1;
+}
+
+.opcionesM>a {
+    text-align: center;
+    font-family: 'Sen-Bold';
+    font-size: 17px;
+    width: 100px;
+    height: 30px;
+    margin: 1%;
+    color: white;
+    background-color: rgb(37, 37, 37);
+    border-radius: 14px;
+    border: solid white 2px;
+}
+
+.opcionesM>a:hover {
+    background-color: #E4A400;
+    margin-left: 8px;
+    transition: margin-left .5s;
+}
+
+.opcionesM>a>p {
+    user-select: none;
+}

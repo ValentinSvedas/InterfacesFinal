@@ -1,3 +1,5 @@
+@import url(animaciones.css);
+@import url(carousel.css);
 @font-face {
     font-family: "Sen";
     src: url("../fonts/Sen-Regular.ttf");
@@ -11,6 +13,11 @@
 @font-face {
     font-family: "Sen-ExtraBold";
     src: url("../fonts/Sen-ExtraBold.ttf");
+}
+
+@font-face {
+    font-family: "ShipporiAntiqueB1";
+    src: url("../fonts/ShipporiAntiqueB1-Regular.ttf");
 }
 
 * {
@@ -27,7 +34,6 @@ body {
 }
 
 section>h1 {
-    font-family: 'Sen-ExtraBold';
     font-size: 101px;
     text-align: left;
     color: white;
@@ -36,24 +42,238 @@ section>h1 {
     transform: matrix(1, 0, 0, 1, 0, 0);
 }
 
+.fuenteSE {
+    font-family: 'Sen-ExtraBold';
+    color: white;
+}
+
+.fuenteSB {
+    font-family: 'Sen-Bold';
+}
+
 .titulo1 {
     text-align: center;
-    margin-left: 20%;
-    margin-right: 20%;
-    margin-top: 10rem;
+    margin: auto;
+    padding-top: 12%;
+    margin-left: 19%;
+    margin-right: 23%;
+    margin-bottom: 17%;
+    animation: inicioText 5s forwards 0.5s;
 }
 
-div>.p-2 {
-    height: 100%;
+.titulo2 {
+    opacity: 0;
 }
 
-.menu {
-    width: 92px;
-    height: 58px;
-    margin-top: 25px;
+.titulo2,
+.titulo3 {
+    font-size: 70px;
+    text-align: left;
+    line-height: 64px;
+    text-shadow: 0px 4px 5px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+.titulo3 {
+    width: 80%;
+    font-size: 66px;
+    margin: auto;
+}
+
+.menuBurger {
+    margin-top: 15px;
     margin-right: 20px;
 }
 
+.menuBurger>img {
+    width: 80px;
+}
+
+.menuBur {
+    opacity: .8;
+}
+
+.menuBHover {
+    position: relative;
+    width: 89px !important;
+    left: 6%;
+    top: 0.8%;
+    display: none;
+}
+
 .logo {
-    background-color: #e4a30065;
+    margin-left: 20px;
+    margin-top: -8px;
+    filter: contrast(1);
+    width: 120px;
+}
+
+button {
+    background-color: #E4A400;
+}
+
+.ham1 {
+    width: 347px;
+    height: 232px;
+    top: -48.5%;
+    left: 71%;
+    transform: rotate(19deg);
+    animation: inicioHam1 7s forwards 0.5s;
+}
+
+.ham2 {
+    height: 373px;
+    top: 0rem;
+    left: 6rem;
+    transform: rotate(-28deg);
+    z-index: -1;
+    filter: blur(1.7px);
+    animation: inicioHam2 10s forwards 0.5s;
+}
+
+.ham3 {
+    height: 157px;
+    top: 2rem;
+    left: 70%;
+    transform: rotate(20deg);
+    filter: blur(2.1px);
+    z-index: -2;
+    animation: inicioHam3 15s forwards 0.5s;
+}
+
+.cartel {
+    height: 52px;
+    top: 80%;
+    left: -1%;
+    animation: cartelInicio 2s forwards 0.5s;
+}
+
+.sec1,
+.sec2,
+.sec3 {
+    height: 682px;
+}
+
+.menubotn {
+    opacity: 0;
+}
+
+.sec2 {
+    margin-left: -8px;
+    width: 101.2%;
+    margin-top: -1.7%;
+    z-index: 0;
+}
+
+.fondo2 {
+    width: 100%;
+    object-fit: cover;
+    height: 101%;
+    z-index: -1;
+    filter: blur(0.5px);
+}
+
+.bt2 {
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 40px;
+    margin-left: 9%;
+    margin-right: 9%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+.colorMostaza {
+    color: #E4A400;
+}
+
+.fullpage {
+    background-color: rgba(0, 0, 0, 0.500);
+    z-index: 0;
+}
+
+.fondoinicio {
+    width: 100%;
+    height: 695px;
+    z-index: -2;
+    filter: blur(1px);
+    top: -10px;
+    animation: fondoinicio 2.5s forwards 0.5s;
+}
+
+.bordeMenu>img {
+    width: 60px;
+    height: 60px;
+    margin-top: 10%;
+}
+
+.bordeMenu {
+    border-radius: 100%;
+    border: white 2px solid;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    margin-left: 1.5%;
+    margin-right: 1.5%;
+    background-color: rgba(255, 255, 255, 0.200);
+}
+
+.bordeMenu:hover {
+    background-color: white;
+    box-shadow: 0px 2px 2px rgb(0, 0, 0);
+    transform: matrix(1, 0, 0, 1, 0, 0);
+}
+
+.menuBtnText {
+    font-family: "ShipporiAntiqueB1";
+    color: white;
+    width: 100px;
+    text-align: center;
+    text-shadow: 0px 2px 2px rgb(0, 0, 0);
+}
+
+.sec2>div {
+    padding-top: 35%;
+    margin-left: 46%;
+}
+
+a {
+    text-decoration: none;
+}
+
+.sec3 {
+    z-index: 1;
+    background-color: #E4A400;
+    width: 100%;
+}
+
+.opcionesM>div {
+    text-align: center;
+    font-family: 'Sen-Bold';
+    font-size: 17px;
+    width: 100px;
+    height: 30px;
+    margin: 1%;
+    color: white;
+    background-color: rgb(37, 37, 37);
+    border-radius: 14px;
+    border: solid white 2px;
+}
+
+.opcionesM>div:hover {
+    background-color: #E4A400;
+    margin-left: 8px;
+    transition: margin-left .5s;
+}
+
+.opcionesM>div>p {
+    user-select: none;
+}
+
+.opcionesM {
+    margin-top: -3%;
+    left: 90.8%;
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0.200);
+    border-radius: 20px;
 }

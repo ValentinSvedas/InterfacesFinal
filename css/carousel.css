@@ -1,0 +1,204 @@
+.carousel__contenedor {
+    position: relative;
+}
+
+.carousel__next,
+.carousel__prev {
+    position: absolute;
+    display: block;
+    width: 30px;
+    height: 30px;
+    border: none;
+    top: 260%;
+    cursor: pointer;
+    line-height: 30px;
+    text-align: center;
+    background: none;
+    color: #fff;
+    opacity: 50%;
+    z-index: 1;
+}
+
+.carousel__next:hover,
+.carousel__prev:hover {
+    opacity: 100%;
+    background-color: #a37500;
+    border-radius: 100%;
+}
+
+.carousel__next {
+    right: 50px;
+}
+
+.carousel__prev {
+    left: 50px;
+    margin-right: 25px;
+}
+
+.carousel__lista {
+    overflow: hidden;
+    width: 80%;
+}
+
+.carousel__elemento>img {
+    margin-left: 13%;
+    margin-right: 10%;
+    margin-top: 10%;
+    margin-bottom: 1%;
+}
+
+.carousel__elemento {
+    align-items: center;
+    margin-bottom: -5%;
+}
+
+.h2,
+.h4,
+.h5,
+.h7,
+.h8,
+.h9 {
+    width: 250px;
+    filter: blur(.3px);
+}
+
+.h2:hover,
+.h4:hover,
+.h5:hover,
+.h7:hover,
+.h8:hover,
+.h9:hover {
+    transition: width .3s;
+    width: 270px;
+    margin-left: 9%;
+    filter: blur(0);
+}
+
+.h4 {
+    padding-top: 7%;
+}
+
+.h9 {
+    margin-top: 3% !important;
+}
+
+.h5 {
+    margin-top: 0% !important;
+}
+
+.h7 {
+    margin-top: 1% !important;
+}
+
+.carousel__indicador .glider-dot {
+    display: block;
+    width: 30px;
+    height: 4px;
+    background: #fff;
+    opacity: .2;
+    border-radius: 0;
+}
+
+.carousel__indicador .glider-dot:hover {
+    opacity: .5;
+}
+
+.carousel__indicador .glider-dot.active {
+    opacity: 1;
+}
+
+.titleBurger>i {
+    padding: 5%;
+    padding-top: 16%;
+    filter: brightness(10) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    font-size: 15px;
+}
+
+.titleBurger {
+    font-family: 'Sen';
+}
+
+.titleBurger>p {
+    font-size: 30px;
+    padding-top: 10%;
+    color: black;
+    line-height: 33px;
+    width: 80%;
+}
+
+.precioh2>img,
+.precioh4>img,
+.precioh5>img,
+.precioh8>img,
+.precioh7>img,
+.precioh9>img {
+    width: 150px;
+    height: 150px;
+    margin-left: 25%;
+    margin-right: 25%;
+    position: relative;
+    top: -30px;
+}
+
+.precioh2>p,
+.precioh4>p,
+.precioh5>p,
+.precioh8>p,
+.precioh7>p,
+.precioh9>p {
+    position: relative;
+    top: -100px;
+    left: 20%;
+    font-family: 'Sen-Bold';
+    font-size: 25px;
+    line-height: 57px;
+    color: black;
+    margin-left: 17%;
+}
+
+.precioh2>p {
+    top: -133px;
+}
+
+.precioh4>p {
+    top: -132px;
+}
+
+.precioh4 {
+    margin-top: 29px;
+}
+
+.precioh5>p {
+    top: -133px;
+}
+
+.precioh5 {
+    margin-top: -8px;
+}
+
+.precioh8>p,
+.precioh9>p {
+    top: -132px;
+}
+
+.precioh8 {
+    margin-top: 15px;
+}
+
+.precioh9 {
+    margin-top: -15px;
+}
+
+.precioh7>p {
+    top: -132px;
+}
+
+.precioh7 {
+    margin-top: -11px;
+}
+
+.x2 {
+    color: white;
+    font-size: 37px;
+    filter: drop-shadow(0px 4px 4px rgb(0, 0, 0));
+}
